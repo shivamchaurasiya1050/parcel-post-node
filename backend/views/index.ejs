@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Your Parcel Confirmation</title>
+</head>
+<body>
+    <h3>Dear <%=data.user.name %> ,</h3>
+    <p>Thank you for placing an order with us! Your order has been received and is being processed.</p>
+    
+    <h2>Parcel Details:</h2>
+    <p>Parcel ID: <%= data.user.trackId %> </p>
+    <p>Title:<%=data.parcel.title %> </p>
+    <p>Parcel Date:<%= new Date(Date.now()) %> </p>
+    <p>Shipping Address:<%=data.parcel.address %> </p>
+    <p>State:<%=data.parcel.state %> </p>
+    <p>City:<%=data.parcel.city %> </p>
+    <p>Parcel status:<%=data.parcel.status %> </p>
+    
+    
+    <h2>Your Details:</h2>
+    <p>Name:<%= data.user.name %> </p>
+    <p>Email:<%= data.user.email %> </p>
+    <p>TrackID:<%= data.user.trackId %> </p>
+    <p>Password:<%= data.user.password %> </p>
+    <p>Total Amount:&#x20b9; <%= data.parcel.price %> </p>
+
+    <p> You can login through <h4>Email && Password</h4> and check more details about your parcel </p>
+    
+    <p>We will notify you as soon as your order has been shipped. If you have any questions about your order, please feel free to contact our customer support team.</p>
+    
+    <p>Thank you for choosing our parcel!</p>
+    <p>Sincerely,<br>Your Company Name</p>
+</body>
+</html>
+
